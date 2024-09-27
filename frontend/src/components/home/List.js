@@ -103,7 +103,7 @@ const List = () => {
                 </tr>
                 {toDos?.map((todo, index)=>{
                   return(
-                    <tr className='h-20 border-b'>
+                    <tr key={todo.id} className='h-20 border-b'>
                       <td className='p-4 border-r-2'>{index + 1}.</td>
                       <td onClick={()=>{setOperableToDo(todo); handleDetailsModalToggle();}} className='p-4 border-r-2 hover:bg-neutral-100 cursor-pointer'>{todo.title}</td>
                       <td className='p-4 border-r-2'>{todo.date}</td>
