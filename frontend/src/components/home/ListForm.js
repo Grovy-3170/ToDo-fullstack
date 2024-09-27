@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 const ListForm = ({toDo, handleCancel, handleSubmit}) => {
   return (
-    <form onSubmit={handleSubmit} className='p-6 bg-white rounded-2xl flex flex-col gap-8 w-[800px]'>
+    <form onSubmit={handleSubmit} className='p-6 bg-white rounded-2xl flex flex-col gap-8 xl:w-[1000px] lg:w-[800px] md:w-[600px] sm:w-[400px] w-80'>
         <label className='flex flex-col gap-2'>
             Enter the title:
             <input type='text' name='title' placeholder={toDo?.title} className='border-2 p-2 rounded-lg'/>
